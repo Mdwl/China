@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+<style>
+*{margin: 0;padding: 0;}
+body{font-size: 20px;}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.mr10{margin-right: 10px;}
+.section { /*text-align: center;*/ font: 50px "Microsoft Yahei"; color: #fff;}
+#menu { margin: 0; padding: 0;  list-style-type: none; z-index: 90;width:600px;height:90px;float: right;}
+#menu li { float: left; margin: 20px 40px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none;}
+#menu a:hover{color: #dcdcdc;background-color: #000;}
+#menu .active a {color: #dcdcdc; background-color: #000;}
+
+.section3{background-image: url(image/17.jpg);background-size: 100% 100%;}
+.contab{width:800px;height: 380px;background-color: #fff;margin:0 40px;opacity: 0.8;}
+
+.bots{margin-left: 380px;}
+.bots span{background-color: #fff;width:300px;height: 80px;text-align: center;line-height: 80px;display: inline-block;font-size: 20px;margin-right: 1px;opacity: 0.9;}
+.bots span a{color: #333;display: inline-block;text-decoration: none;width: 266px;height: 80px;}
+/*.bots span:hover{opacity: 1;background-color: #101010;}
+.bots span:hover a{color: #fff;}*/
+.bots .on{opacity: 1;background-color: #333;}
+.bots .on a{color: #fff;}
+
+.tab1,.tab2,.tab3{padding: 20px;box-sizing: border-box;}
+
+
+
+.box{position:relative;width: 900px;height: 380px;margin:0 auto;margin-top: 20px;}
+.tab1{position: absolute;top: 0;display:block;}
+.tab2{position: absolute;top: 0;display:none;}
+
+.fan{position: fixed;top: 170px;right:39px;z-index:999;width: 40px;height: 40px;}
+.fan a img{width: 40px;height: 40px;}
+
+body{font-size: 20px;font-size:18px;color: #000000;}
+table{font-size: 18px;color: #000000;height: 300px;margin-left: 130px;}
+table input[type="text"]{height: 30px;font-size: 14px}
+table input[type="password"]{height: 30px;font-size: 14px}
+input[type="submit"],input[type="button"]{width: 100px;height: 40px;background-color: #000000;color: #fff;display: inline-block;text-align: center;line-height: 40px;font-size: 16px;font-family: "微软雅黑"}
+table span{margin-left: 10px;}
+.txr{text-align: right;}
+.tec{text-align: center;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu:'#menu',
+		'navigation': true,
+//		 loopBottom: true,
+		 scrollBar:true,
+		
+	});
+$("html").css("overflow","hidden");
+});
+</script>
+
+	<body>
+		<div class="fan"><a href="index.html"><img src="image/fan.jpg"/></a></div>
+		<div class="top">
+		<a href="index.html"><img src="image/logo3.png" style="height: 89px;margin-left: 100px;float: left;"/></a>
+		<span class="logo fl">中国洛阳</span>
+		<ul id="menu">
+			<li data-menuanchor="page1" ><a href="index.html">中国洛阳</a></li>
+			<li data-menuanchor="page2"><a href="index.html#page2">历史文化</a></li>
+			<li data-menuanchor="page3"><a href="index.html#page3">洛阳美食</a></li>
+			<li data-menuanchor="page4"><a href="index.html#page4">世界文化遗产</a></li>
+		</ul>
+	</div>
+	<div id="dowebok">
+		
+		<div class="section section3">
+			<div class="bots">
+				<span class="on"><a href="javascript:;">登录</a></span><span><a href="javascript:;">注册</a></span>
+			</div>
+			<div class="box">
+			<div class="contab tab1">
+				<form> 
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="200px" class="txr">账号：</td><td width="300px"><input type="text" name="" id="unum" value="" /><span class="hao"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">姓名：</td><td><input type="text" name="" id="uname" value="" /><span class="pname"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">密码：</td><td><input type="password" name="" id="upwd" value="" /><span class="ppwd"></span></td>
+					</tr>
+					<!--<tr>
+						<td class="txr">确认密码：</td><td><input type="text" name="" id="" value="" /></td>
+					</tr>-->
+					<tr>
+						<td colspan="2" class="tec"><input type="button" value="登录" id="denglu" /></td>
+					</tr>
+				</table>
+					
+				</form>
+			</div>
+			
+			
+			<!----------------tab切换2--->
+			<div class="contab tab2">
+				<form>
+					
+					
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="200px" class="txr">姓名：</td><td width="300px"><input type="text" name="" id="zname" value="" /><span class="sname"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">密码：</td><td><input type="password" name="" id="zpwd" value="" /><span class="spwd"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">确认密码：</td><td><input type="text" name="" id="zpwd2" value="" /><span class="spwd2"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">邮箱：</td><td><input type="text" name="" id="zeml" value="" /><span class="seml"></span></td>
+					</tr>
+					<tr>
+						<td class="txr">手机号码：</td><td><input type="text" name="" id="zpho" value="" /><span class="spho"></span></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="tec"><input type="button" value="注册" id="zhuce"/></td>
+					</tr>
+				</table>
+				
+				</form>
+			
+			</div>
+
+		</div>
+			
+			
+				
+			
+		</div>
+	</div>	
+	</body>
+	<script>
+		new WOW().init();
+		$(function(){
+			$(".bots span").bind("click",function(){
+//				alert($(this).index());
+				var index=$(this).index();//获取当前点击的li的索引值
+				$(this).addClass("on").siblings().removeClass("on");//给当前的li加上类active，它的同胞元素去掉类
+				$(".box>div").eq(index).show().siblings(".box>div").hide();
+			})
+//			----登陆账号不能为空
+			$("#unum").blur(function(){
+				var v=$("#unum").val();
+				if(v.length==0){
+				$(".hao").html("账号不能为空");
+				}else{
+					$(".hao").html("");
+				}
+			});
+			$("#uname").blur(function(){
+				
+				if($("#uname").val()==""){
+					$(".pname").html("姓名不能为空");
+				}else{
+				$(".pname").html("");
+			}
+			});
+			$("#upwd").blur(function(){
+				
+				if($("#upwd").val()==""){
+					$(".ppwd").html("密码不能为空");
+				}else{
+				$(".ppwd").html("");
+			}
+			});
+			
+//			----------注册
+			var reg1=/[\u4e00-\u9fa5]/;
+			$("#zname").blur(function(){
+				if($("#zname").val()==""){
+					$(".sname").html("姓名不能为空");
+				}else if (!reg1.test($("#zname").val())) {
+					$(".sname").html("格式不正确");
+				}else{
+					$(".sname").html("");
+				}
+			});
+			
+			var reg2=/^[0-9a-zA-Z]+$/;
+			$("#zpwd").blur(function(){
+				if($("#zpwd").val()==""){
+					$(".spwd").html("密码不能为空");
+				}else if (!reg2.test($("#zpwd").val())) {
+					$(".spwd").html("格式不正确");
+				}else{
+					$(".spwd").html("");
+				}
+			});
+			$("#zpwd2").blur(function(){
+				if($("#zpwd2").val()==$("#zpwd").val()){
+					$(".spwd2").html("");
+				}else{
+					$(".spwd2").html("密码不一致");
+				}
+			});
+			
+			var reg3=/^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$/;
+			$("#zeml").blur(function(){
+				if($("#zeml").val()==""){
+					$(".seml").html("邮箱不能为空");
+				}else if (!reg3.test($("#zeml").val())) {
+					$(".seml").html("格式不正确");
+				}else{
+					$(".seml").html("");
+				}
+			});
+			
+			var reg4=/^1\d{10}$/;
+			$("#zpho").blur(function(){
+				if($("#zpho").val()==""){
+					$(".spho").html("手机不能为空");
+				}else if (!reg4.test($("#zpho").val())) {
+					$(".spho").html("格式不正确");
+				}else{
+					$(".spho").html("");
+				}
+			});
+			
+			
+		});
+		
+		
+		
+	</script>
+</html>

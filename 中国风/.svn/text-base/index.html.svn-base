@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>中国洛阳</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+<style>
+/*body{overflow: hidden;}*/
+.section { /*text-align: center;*/ font: 50px "Microsoft Yahei"; color: #fff;}
+#menu { margin: 0; padding: 0;  list-style-type: none; z-index: 90;width:600px;height:90px;float: right;}
+#menu li { float: left; margin: 20px 40px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none;}
+#menu a:hover{color: #dcdcdc;background-color: #000;}
+#menu .active a {color: #dcdcdc; background-color: #000;}
+.section1{background: url(image/5.jpg)50%;}
+/*.section2{background: url(image/5.jpg)50%;}*/
+.section2 .slide1{
+	background: url(image/bg.png);
+	
+	}
+.section2 .slide2{
+	background: url(image/bg9.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.section2 .slide3{
+	background: url(image/bg8.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.section3{
+	background: url(image/2.jpg) no-repeat 100%;
+	background-size: cover;
+}
+.section4{
+	background: url(image/15.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/goTop.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu:'#menu',
+		'navigation': true,
+//		 loopBottom: true,
+		 scrollBar:true,
+		
+	});
+	$("html").css("overflow","hidden");
+//	setInterval(function(){
+//      $.fn.fullpage.moveSlideRight();
+//  }, 6000);                                                                                                                                                                                                                                                                                                                                                                                               
+$(".goTop").goTop();
+});
+</script>
+</head>
+
+<body scroll="no">
+	<div class="deng">
+	<span><a href="enter.html">登录</a></span>
+	<span><a href="enter.html">注册</a></span>
+</div>
+	<div class="top">
+		<a href="index.html"><img src="image/logo3.png" style="height: 89px;margin-left: 100px;float: left;"/></a>
+		<span class="logo fl">中国洛阳</span>
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="#page1">中国洛阳</a></li>
+			<li data-menuanchor="page2"><a href="#page2">历史文化</a></li>
+			<li data-menuanchor="page3"><a href="#page3">洛阳美食</a></li>
+			<li data-menuanchor="page4"><a href="#page4">世界文化遗产</a></li>
+		</ul>
+	</div>
+<div id="dowebok">
+	<div class="section section1">
+		<!--<h3 name="maodian">第一屏</h3>
+		
+		<p>fullPage.js — 项目导航演示</p>-->
+		<div class="first"> <!--data-wow-duration= "2s"-->
+			<span class="wow zoomIn">中国洛阳</span>
+		</div>
+		<div class="firimg fr wow fadeInUp" data-wow-duration= "3s">
+			<a href="image/53.jpg"  data-lightbox="road"><img src="image/53.jpg"/></a>
+		
+		</div>
+		<div class="s">
+			<p>
+				洛邑故郡，肴函帝宅。<br/>
+				八关都邑，十省通衢。<br/>
+				半城花雨启丝路，九曲运河带京杭。<br/>
+				鸟瞰兮六河归宗，俯仰兮日月玄黄。<br/>
+				河图洛书通天兆，八卦九畴示心房；<br/>
+				紫薇光耀环帝都，天罡遥指佑雒阳。
+			</p>
+		</div>
+		
+	</div>
+	<div class="section section2">
+		<div class="slide slide2">
+			<span class="span4 dianji"><a href="mudan.html">点击了解</a></span>
+			<p class="tit">洛阳牡丹甲天下</p>
+			
+			<div class="sli2 fr">
+				<p>
+					洛阳牡丹，“唯有牡丹真国色，花开时节动京城”，为多年生落叶小灌木。洛阳是十三朝古都，有“千年帝都，牡丹花城”的美誉。</p>
+					<p>“洛阳地脉花最宜，牡丹尤为天下奇。”其栽培始于隋，鼎盛于唐，宋时甲于天下。它雍容华贵、国色天香、富丽堂皇，寓意吉祥富贵、繁荣昌盛，是华夏民族兴旺发达、美好幸福的象征。</p>
+						<p>洛阳牡丹花朵硕大，品种繁多，花色奇绝，有红、白、粉、黄、紫、蓝、绿、黑及复色9大色系、10种花型、1000多个品种。花开时节，洛阳城花海人潮，竞睹牡丹倩姿芳容。
+				</p>
+			</div>
+			<div class="spi">
+				<img src="image/48.jpg"/>
+			</div>
+			<p class="bot wow fadeInUp" data-wow-duration = "1s" data-wow-delay="1s">唯有牡丹真国色 &nbsp; &nbsp; &nbsp;花开时节动京城</p>
+		</div>
+		<div class="slide slide1">
+			<div class="sli1 fr">
+				<a href="image/64.jpg"  data-lightbox="road"><img src="image/64.jpg"/></a>
+			</div>
+			<span>悠久的历史文化</span>
+			<div class="duan">
+				
+				<p>洛阳古称京洛、雒阳、斟鄩、洛州、河南府，位于河南西部、黄河中游，因地处洛河之阳而得名，是国务院首批公布的历史文化名城，也是中部地区重要的工业城市。</p>
+			<p>洛阳有着5000多年文明史、4000年的建城史[1]  和1500多年的建都史，先后有105位帝王在此定鼎九州。是华夏文明的发源地之一、中华民族的发祥地之一。是隋唐大运河的重要枢纽。牡丹因洛阳而闻名于世，被誉为“千年帝都，牡丹花城”。</p>
+			<p>截至2015年洛阳拥有三项世界文化遗产，沿洛河两岸分布着夏都二里头遗址、偃师商城、东周王城、汉魏故城、隋唐洛阳城等五大都城遗址。</p>
+			</div>
+			
+		</div>
+		
+		<div class="slide slide3">
+			<span class="t">风俗民情</span>
+			<div class="slicon">
+				<p>以洛阳为中心的河洛流域地区是中华文明的发祥地之一。</p>
+				<p>洛阳十大文化符号：河图洛书；二里头遗址；杜康；周公；白马寺；关林；龙门石窟；牡丹；水席；“东方红”拖拉机。[27] </p>
+				<p>
+				洛阳唐三彩：中国古代陶瓷艺术中的瑰宝，始于南北朝，盛于唐，洛阳为主要产地。			
+				<p>真不同洛阳水席制作技艺是“国家级非物质文化遗产”，为中国唯一以整套宴席入选的国家级非遗项目。 </p>
+				<p>洛阳汤文化：羊肉汤，牛肉汤，丸子汤，驴肉汤，豆腐汤，不翻汤，胡辣汤。 龙门石窟【2000年列入】</p>
+				<p>丝绸之路（汉魏洛阳故城遗址、隋唐洛阳城定鼎门遗址、新安汉函谷关遗址）【2014年列入】</p>
+				</p>
+			</div>
+			<div class="wo">
+				<span class="ti wow fadeInUp" data-wow-duration = "5s" data-wow-delay="2s">洛阳风俗不禁街 &nbsp; &nbsp; &nbsp;骑马夜归香满怀</span>
+			</div>
+		</div>
+	</div>
+	<div class="section section3">
+		<p class="words">洛阳美食</p>
+		<div class="imglist">
+			<ul class="folist">
+				<li class="wow fadeInDown">
+					<p>衡水卤肉</p>
+					<a href="food.html"><img src="image/f1.jpg"/></a>
+				</li>
+				<li class="wow fadeInDown">
+					<p>羊肉汤</p>
+					<a href="food.html"><img src="image/f2.jpg"/></a>
+				</li>
+				<li class="wow fadeInDown">
+					<p>洛阳水席</p>
+					<a href="food.html"><img src="image/f17.jpg"/></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section section4">
+		<p class="long">龙门石窟</p>
+		<span class="span4"><a href="longmen.html">点击了解</a></span>
+		<div class="picgroup fr ">
+			<ul>
+				<li class="li1 wow bounceInUp">
+					<a href="image/18.jpg"  data-lightbox="road"><img src="image/20.jpg"/></a>
+				</li>
+				<li class="li1 wow bounceInUp" data-wow-delay="0.5s">
+					<a href="image/18.jpg"  data-lightbox="road"><img src="image/18.jpg"/></a>
+				</li>
+				<li class="wow bounceInUp"  data-wow-delay="1s">
+					<a href="image/49.jpg"  data-lightbox="road"><img src="image/49.jpg"/></a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+		<!--<div class="section section5"></div>-->
+	</div>
+	
+<div class="back">
+	<a href="index.html#page1" class="goTop"><img src="image/back.png"/></a>
+</div>
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+
+</body>
+	<script>
+		new WOW().init();
+	</script>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css1.css"/>
+<style>
+*{margin: 0;padding: 0;}
+body{font-size: 20px}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.mr10{margin-right: 10px;}
+.section { /*text-align: center;*/ font: 50px "Microsoft Yahei"; color: #fff;}
+#menu { margin: 0; padding: 0;  list-style-type: none; z-index: 90;width:600px;height:90px;float: right;}
+#menu li { float: left; margin: 20px 40px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none;}
+#menu a:hover{color: #dcdcdc;background-color: #000;}
+#menu .active a {color: #dcdcdc; background-color: #000;}
+
+.section1{background-image: url(image/a1.jpg);background-size: 100% 100%;}
+.section2{background-image: url(image/17.jpg);background-size: 100% 100%;}
+.contab{width: 900px;height: 380px;background-color: #fff;margin:0 auto;opacity: 0.8;}
+.back{position: fixed;bottom: 20px;right: 20px;z-index: 5;}
+.back img{width: 80px;height: 40px;}
+
+.fan{position: fixed;top: 170px;right:39px;z-index:999;width: 40px;height: 40px;}
+.fan a img{width: 40px;height: 40px;}
+
+.section2 .longcon{width:500px;color: #111111;border: 2px solid #000000;margin: 50px 100px;padding: 10px;box-sizing: border-box;background-color:rgba(255,255,255,0.2);}
+.longcon h2{font-size: 30px;font-family: "lishu"}
+.longcon p{text-indent: 2rem;font-size: 18px;font-family: "lishu"}
+.longr img{margin-right: 450px;width: 250px;margin-top: 50px;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu:'#menu',
+		'navigation': true,
+//		 loopBottom: true,
+		 scrollBar:true,
+		
+	});
+$("html").css("overflow","hidden");
+});
+</script>
+
+	<body>
+		<div class="back">
+			<a href="longmen.html#page1" class="goTop"><img src="image/back.png"/></a>
+		</div>
+		<div class="fan"><a href="index.html#page4"><img src="image/fan.jpg"/></a></div>
+		<div class="top">
+		<a href="index.html"><img src="image/logo3.png" style="height: 89px;margin-left: 100px;float: left;"/></a>
+		<span class="logo fl">中国洛阳&nbsp;&nbsp;&nbsp;&nbsp;龙门石窟</span>
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="#page1">龙门石窟图集</a></li>
+			<li data-menuanchor="page2"><a href="#page2">文化历史</a></li>
+			
+		</ul>
+	</div>
+	<div id="dowebok">
+		<div class="section section1">
+			<div class="all">
+		<ul>
+				<li class="hov1">
+					<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/7e.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;" class="pi pic1"><!-- <img src="image/lanterns.jpg" alt=""> -->
+					</a>
+				</li>
+				<li class="hov2">	<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/49.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;" class="pi pic2"><!-- <img src="image/tree.jpg" alt=""> -->
+					</a>
+				</li>
+				<li class="hov3">	<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/92.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;" class="pi pic3"><!-- <img src="image/cablecar.jpg" alt=""> -->
+					</a>
+				</li>
+				<li class="hov1">	<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/s2.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;" class="pi pic4"><!-- <img src="image/londoneye.jpg" alt=""> -->
+					</a>
+				</li>
+				<li class="hov2">	<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/s3.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;" class="pi pic5"><!-- <img src="image/statue.jpg" alt=""> -->
+					</a>
+				</li>
+				<li class="hov3">	<div class="harf">
+						<h3>LongMen</h3>
+						<a href="image/s5.jpg"  data-lightbox="road">PHOTO</a>
+					</div>
+					<a href="javascript:;         " class="pi pic6"><!-- <img src="image/bridge.jpg" alt=""> -->
+					</a>
+				</li>
+			
+			</ul>	
+
+
+
+	</div>
+			
+		</div>
+			<div class="section section2">
+				<div class="longr fr">
+					<img src="image/19.jpg"/>
+				</div>
+				<div class="longcon wow fadeInUp">
+					<h2>龙门石窟 </h2>
+					<p>（世界文化遗产、5A级景区、河南洛阳龙门石窟）</p>
+					<p>龙门石窟是中国石刻艺术宝库之一，现为世界文化遗产、全国重点文物保护单位、国家AAAAA级旅游景区，位于河南省洛阳市洛龙区伊河两岸的龙门山与香山上。龙门石窟与莫高窟、云冈石窟、麦积山石窟并称中国四大石窟。</p>
+					<p>龙门石窟开凿于北魏孝文帝年间，之后历经东魏、西魏、北齐、隋、唐、五代、宋等朝代连续大规模营造达400余年之久，南北长达1公里，今存有窟龛2345个，造像10万余尊，碑刻题记2800余品。其中“龙门二十品”是书法魏碑精华，褚遂良所书的“伊阙佛龛之碑”则是初唐楷书艺术的典范。</p>
+					<p>龙门石窟延续时间长，跨越朝代多，以大量的实物形象和文字资料从不同侧面反映了中国古代政治、经济、宗教、文化等许多领域的发展变化，对中国石窟艺术的创新与发展做出了重大贡献。2000年被联合国科教文组织列为世界文化遗产。</p>
+				</div>
+			</div>
+	</div>	
+	</body>
+	<script>
+		new WOW().init();
+		$(function(){
+			$(".bots span").bind("click",function(){
+//				alert($(this).index());
+				var index=$(this).index();//获取当前点击的li的索引值
+				$(this).addClass("on").siblings().removeClass("on");//给当前的li加上类active，它的同胞元素去掉类
+				$(".box>div").eq(index).show().siblings(".box>div").hide();
+			})
+			
+		})
+	</script>
+</html>

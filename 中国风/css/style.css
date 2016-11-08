@@ -1,0 +1,59 @@
+
+@font-face {
+	font-family:"myfont";
+	src: url(../font/米芾体.TTF);
+}
+@font-face {
+	font-family:"lishu";
+	src: url(../font/FZTJLSJW.TTF);
+}
+.fl{float: left;}
+.fr{float: right;}
+ul{list-style: none;}
+.top{width: 100%;height: 90px;background-color: #000000;position: fixed; top: 0px;right: 0;z-index: 70;opacity: 0.9;}
+.logo{color: #fff;font-size: 25px;font-family: "myfont";display: inline-block;height: 50px;margin-top: 30px;margin-left: 20px;}
+.back{position: fixed;bottom: 20px;right: 20px;}
+.back img{width: 80px;height: 40px;}
+/*----*/
+.first{margin-top: 60px;margin-left: 200px;}
+.first span{color: #000;font-family:  "myfont";font-size: 60px}
+.s{margin-top: 50px;margin-left: 220px;margin-top:60px;}
+.s p{font-size: 20px;color: #000000;line-height: 40px;}
+.firimg img{width: 400px;margin-right:300px;}
+.folist li{float: left;margin-left: 90px;}
+.folist li img{width: 200px;height: 200px;border-radius:50%;border:10px solid transparent;transition: all 1s;}
+.words{font-size: 50px;font-family: "myfont";color: #000000;margin-left: 300px;margin-top: 100px;}
+.imglist{margin-top: 100px;}
+.folist li img:hover{border:10px solid #757070;transition: all 1s;}
+.folist li img:hover p{font-size: 20px;}
+.folist li p{color: #757070;font-size: 18px}
+.long{font-size: 50px;font-family: "myfont";color: #000000;margin-top: 70px;margin-left:600px;}
+.picgroup{margin-right: 150px;}
+.picgroup .li1 img{width: 286px;height: 220px;}
+.picgroup ul li{float: left;margin-left: 80px;}
+.picgroup ul li img{border-radius: 10px;border:5px solid transparent;transition: all 1s;}
+.picgroup ul li img:hover{border:5px solid #757070;transition: all 1s;}
+.span4{color: #fff;display: inline-block;width: 90px;height: 40px;background-color: #000000;font-size: 16px;float: right;text-align: center;line-height: 40px;cursor: pointer;margin-right: 300px;border-radius: 5px;}
+.span4 a{color: #fff;text-decoration: none;}
+.span4:hover{background-color: #333232;}
+.dianji {margin-top: 100px;}
+/*-----第二屏 分屏样式*/
+.slide1{padding: 20px 100px;box-sizing: border-box;}
+.duan{margin-left: 100px;border: 3px solid #000000;padding: 20px;margin-top: 50px;}
+.sli1{margin-top:120px;}
+.sli1 img{width: 450px;margin-right: 20px;}
+.slide1 span{font-size: 50px;font-family: "myfont";color: #000000;margin-left: 100px;margin-bottom: 90px;margin-top: 20px;}
+.duan{width: 500px;}
+.duan p{font-size: 16px;color: #333333;text-indent: 2rem;}
+.slide2 .tit{font-size: 50px;font-family: "myfont";color: #000000;margin-left: 500px;margin-bottom:70px;margin-top: 70px;}
+.sli2{width: 500px;margin-right: 150px;}
+.sli2 p{text-indent: 2rem;font-size: 16px;color: #333;}
+.spi img{width: 300px;margin-left: 250px;}
+.bot{font-size: 30px;font-family: "myfont";color: #000000;margin-left: 200px;margin-bottom:70px;margin-top:50px;}
+.slide3 .t{font-size: 50px;font-family: "myfont";color: #000000;margin-left: 300px;margin-bottom: 30px;margin-top:30px;display: block;}
+.slicon{width: 600px;margin-left:150px;border: 2px solid #000;padding: 10px;}
+.slicon p{font-size: 16px;color: #111;text-indent: 2rem;}
+.wo .ti{font-size: 30px;font-family: "myfont";color: #000000;margin-left: 190px;margin-top:30px;}
+.deng{position: fixed;top: 90px;right: 0px;z-index: 10;}
+.deng span{display: block;width: 30px;height: 50px;background-color: #000000;text-align: center;}
+.deng span a{color: #eee;text-decoration: none;}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+<style>
+
+*{margin: 0;padding: 0;}
+body{font-size: 20px;}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.mr10{margin-right: 10px;}
+.section { /*text-align: center;*/ font: 50px "Microsoft Yahei"; color: #fff;}
+#menu { margin: 0; padding: 0;  list-style-type: none; z-index: 90;width:600px;height:90px;float: right;}
+#menu li { float: left; margin: 20px 40px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none;}
+#menu a:hover{color: #dcdcdc;background-color: #000;}
+#menu .active a {color: #dcdcdc; background-color: #000;}
+
+.section1{background-image: url(image/bg9.jpg);background-size: 100% 100%;}
+.section2{background-image: url(image/bg9.jpg);background-size: 100% 100%;}
+.contab{width:800px;height: 380px;background-color: #fff;margin:0 40px;opacity: 0.8;}
+
+.bots{margin-left: 380px;}
+.bots span{background-color: #fff;width:300px;height: 80px;text-align: center;line-height: 80px;display: inline-block;font-size: 20px;margin-right: 1px;opacity: 0.9;}
+.bots span a{color: #333;display: inline-block;text-decoration: none;width: 266px;height: 80px;}
+/*.bots span:hover{opacity: 1;background-color: #101010;}
+.bots span:hover a{color: #fff;}*/
+.bots .on{opacity: 1;background-color: #333;}
+.bots .on a{color: #fff;}
+
+
+
+.fan{position: fixed;top: 170px;right:39px;z-index:999;width: 40px;height: 40px;}
+.fan a img{width: 40px;height: 40px;}
+
+body{font-size: 20px;font-size:18px;color: #000000;}
+.flower{margin-top: 40px;margin-left: 90px;}
+.flower img{width: 300px;;opacity: 0.8;border-radius: 20% ;border: 2px solid #161414;}
+.flower img:hover{opacity: 0.9;}
+.flowerr{margin-top: 40px;margin-left: 90px;}
+.flowerr img{width: 300px;height: 200px;opacity: 0.8;border-radius: 20% ;border: 2px solid #161414;}
+.flowerr img:hover{opacity: 0.9;}
+.wangcheng{margin-top: 20px;margin-right:220px;}
+.jieshao{width: 600px;color:#000;margin-top: 40px;}
+.jieshao span{font-family: "lishu";font-size: 30px;font-weight: bold;}
+.jieshao p{text-indent: 2rem;font-family:"lishu";color: #000000;font-size: 20px;}
+.pg{margin-top: 80px;margin-left: 200px;}
+.pg ul li{margin-left: 20px;}
+.pg ul li img{width: 200px;border-radius:20px ;opacity: 0.8;border: 2px solid #161414;}
+.pg ul li img:hover{opacity: 0.9;}
+.wor{width: 600px;margin-top: 80px;margin-right:200px;}
+.wor p{font-size: 17px;color: #101010;font-family: "lishu";font-weight: bold;text-indent: 2rem;}
+.wor p span{font-size: 50px}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2'],
+		menu:'#menu',
+		'navigation': true,
+//		 loopBottom: true,
+		 scrollBar:true,
+		
+	});
+$("html").css("overflow","hidden");
+});
+</script>
+
+	<body>
+		<div class="fan"><a href="index.html#page2"><img src="image/fan.jpg"/></a></div>
+		<div class="top">
+		<a href="index.html"><img src="image/logo3.png" style="height: 89px;margin-left: 100px;float: left;"/></a>
+		<span class="logo fl">中国洛阳</span>
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="mudan.html#page1">王城公园</a></li>
+			<li data-menuanchor="page2" ><a href="mudan.html#page2" >牡丹历史文化</a></li>
+			
+		</ul>
+	</div>
+	<div id="dowebok">
+		
+		<div class="section section1">
+			<div class="boxr fr">
+				<div class="wangcheng">
+				<img src="image/b.jpg"/>
+			</div>
+			<div class="jieshao wow fadeInUp">
+				<span>王城公园</span>
+				<p class="wow fadeInUp">
+					王城公园，又名洛阳王城公园。坐落在十三朝古都洛阳西工区，因修建在东周王城遗址上而得名。公园始建于1955年，坐落在洛阳市文化馆西的全国重点文物保护单位——东周王城遗址上。占地一千零八十亩，包含古文化区、牡丹花圃、动物馆、游乐场等几个部分，它是全国第一座遗址公园，也是河南省最大的综合性公园[1]  。
+				</p>
+			</div>
+			</div>
+			
+			<div class="flowerr">
+				<a href="image/61.jpg"  data-lightbox="box"><img src="image/61.jpg"/></a>
+			</div>
+			<div class="flower">
+				<a href="image/o1.jpg"  data-lightbox="box"><img src="image/o1.jpg"/></a>
+			</div>
+		
+		</div>
+		<div class="section section2">
+			<div class="wor fr">
+				<p>
+					<span>牡丹</span>  又名“焦骨牡丹”，这个名字的由来与武则天有关。唐时，一个冰封大地的寒冷天气，武则天到后苑游玩，只见天寒地冻，百花雕谢，万物萧条，心里十分懊恼：若一夜之间，百花齐放，该多好，以我堂堂武则天之威，想那百花岂敢违旨!想到这，她面对百花下诏令道：“明朝游上苑，火速报春知，花须连夜发，莫待晓风催!”。武则天诏令一出，百花仙子惊慌失措，聚集一堂商量对策。有的说：“这寒冬腊月要我们开花，不合时令，怎办到?有的说：“武后的圣旨怎么违背呢?不然，一定会落个悲惨的下场；”众花仙默然，她们都目睹过武则天“顺我者昌，逆我者亡”的种种行为，怎么办呢?第二天，一场大雪纷纷扬扬从天而降，尽管狂风呼啸，滴水成冰，但众花仙还是不敢违命。只见后苑中，五颜六色的花朵真的顶风冒雪，绽开了花蕊。武则天目睹此情此景，高兴极了，突然，一片荒凉的花圃映入眼帘，武则天的脸一下子沉了下来“这是什么花?怎敢违背朕的圣旨?”大家一看，原来全是牡丹花。武则天闻听大怒：“马上把这些胆大包天的牡丹逐出京城，贬到洛阳去：”谁知，这些牡丹到洛阳，随便埋入土中，马上就长出绿叶，开出花朵娇艳无比。武则天闻讯，气急败坏，派人即刻赶赴洛阳，要一把将牡丹花全部烧死。无情的大火映红了天空，棵棵牡丹在大火中痛苦地挣扎，呻吟，然而，人们却惊奇发现，牡丹虽枝干已焦黑，但那盛开的花朵却更加夺目。牡丹花就这样获得了“焦骨牡丹”的称号，牡丹仙子也以其凛然正气，被众花仙拥戴为“百花之王”。从此以后，牡丹就在洛阳生根开花，名甲天下。
+				</p>
+			</div>
+			<div class="pg">
+				<ul>
+					<li><a href="image/h4.jpg"  data-lightbox="box"><img src="image/h4.jpg" alt="" /></a></li>
+					
+					<li><a href="image/cf.jpg"  data-lightbox="box"><img src="image/cf.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="back">
+	<a href="mudan.html#page1" class="goTop"><img src="image/back.png"/></a>
+</div>
+	</body>
+	<script>
+		new WOW().init();
+//		$(function(){
+//			$(".bots span").bind("click",function(){
+////				alert($(this).index());
+//				var index=$(this).index();//获取当前点击的li的索引值
+//				$(this).addClass("on").siblings().removeClass("on");//给当前的li加上类active，它的同胞元素去掉类
+//				$(".box>div").eq(index).show().siblings(".box>div").hide();
+//			})
+
+		
+	</script>
+</html>

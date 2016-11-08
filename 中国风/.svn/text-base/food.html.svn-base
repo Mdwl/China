@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+<style>
+*{margin: 0;padding: 0;}
+body{font-size: 20px}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.mr10{margin-right: 10px;}
+.section { /*text-align: center;*/ font: 50px "Microsoft Yahei"; color: #fff;}
+#menu { margin: 0; padding: 0;  list-style-type: none; z-index: 90;width:600px;height:90px;float: right;}
+#menu li { float: left; margin: 20px 40px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none;}
+#menu a:hover{color: #dcdcdc;background-color: #000;}
+#menu .active a {color: #dcdcdc; background-color: #000;}
+
+.section3{background-image: url(image/a1.jpg);background-size: 100% 100%;}
+.contab{width: 900px;height: 380px;background-color: #fff;margin:0 auto;opacity: 0.8;}
+
+.bots{margin-left: 225px;}
+.bots span{background-color: #facd89;width:300px;height: 80px;text-align: center;line-height: 80px;display: inline-block;font-size: 20px;margin-right: 1px;opacity: 0.9;}
+.bots span a{color: #fff;display: inline-block;text-decoration: none;width: 266px;height: 80px;}
+.bots span:hover{opacity: 1;background-color: #f9c67b;}
+.bots .on{opacity: 1;background-color: #f9c67b;}
+
+.tab1,.tab2,.tab3{padding: 20px;box-sizing: border-box;}
+.tab1 ul,.tab2 ul,.tab3 ul{width: 450px;height: 350px;padding-top: 10px;}
+.tab1 ul li,.tab2 ul li,.tab3 ul li{float: left;}
+.tab1 ul li img,.tab2 ul li img,.tab3 ul li img{width: 220px;height: 150px;}
+
+.rtab{margin-left: 460px;}
+.rtab span{color: #191919;font-size: 20px;float: left;display:inline-block;width: 140px;margin-left: 20px;}
+.rtab p{font-size: 14px;color: #333333;line-height: 23px;}
+.box{position:relative;width: 900px;height: 380px;margin:0 auto;margin-top: 20px;}
+.tab1{position: absolute;top: 0;display:block;}
+.tab2{position: absolute;top: 0;display:none;}
+.tab3{position: absolute;top: 0;display: none;}
+.fan{position: fixed;top: 170px;right:39px;z-index:999;width: 40px;height: 40px;}
+.fan a img{width: 40px;height: 40px;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu:'#menu',
+		'navigation': true,
+//		 loopBottom: true,
+		 scrollBar:true,
+		
+	});
+$("html").css("overflow","hidden");
+});
+</script>
+
+	<body>
+		<div class="fan"><a href="index.html#page3"><img src="image/fan.jpg"/></a></div>
+		<div class="top">
+		<a href="index.html"><img src="image/logo3.png" style="height: 89px;margin-left: 100px;float: left;"/></a>
+		<span class="logo fl">中国洛阳</span>
+		<ul id="menu">
+			<li data-menuanchor="page1" ><a href="index.html">中国洛阳</a></li>
+			<li data-menuanchor="page2"><a href="index.html#page2">历史文化</a></li>
+			<li data-menuanchor="page3" class="active"><a href="index.html#page3">洛阳美食</a></li>
+			<li data-menuanchor="page4"><a href="index.html#page4">世界文化遗产</a></li>
+		</ul>
+	</div>
+	<div id="dowebok">
+		<div class="section section3">
+			<div class="box">
+			<div class="contab tab1">
+				<div class="tabl fl">
+					<ul class="l">
+						<li class="mr10"><a href="image/f1.jpg"  data-lightbox="road"><img src="image/f1.jpg"/></a></li>
+						<li><a href="image/h1.jpg"  data-lightbox="road"><img src="image/h1.jpg"/></a></li>
+						<li class="mr10"><a href="image/h2.jpg"  data-lightbox="road"><img src="image/h2.jpg"/></a></li>
+						<li><a href="image/h3.jpg"  data-lightbox="road"><img src="image/h3.jpg"/></a></li>
+					</ul>
+				</div>
+				<div class="rtab">
+					<span>衡水卤肉</span>
+					<p>横水镇位于孟津最西部，黄河南岸，紧邻黄河小浪底水利枢纽，因镇区的河水由南向北流入黄河而得名“横水”。横水自古就是洛阳西北的重镇，拥有悠久的历史文化这卤肉的来历也与横水的历史密不可分，相传当年唐太宗李世民为平定叛乱，御驾亲征至横水附近与部分叛军遭遇，双方随即展开厮杀。当地老百姓为犒劳三军将士杀猪数十头，煮到肉快半熟时，前方突然传来了大批士兵受伤急需草药救治的消息，此时若是再重新烧水熬药，必定会耽误大军行程。情急之下，开药的老中医提出把自己开出的数十种草药投入肉锅中的主意，如此一来，将士们既能吃肉，又能喝药，还不耽误时间，众人在无奈之下只好照办。谁知，肉熟后，揭开锅盖，竟觉奇香扑鼻，将士们吃后赞不绝口，精神大振，随后一路势如破竹、屡战屡胜。将士报捷时，将卤肉献给圣上，圣上龙颜大悦，特封横水卤肉为国宴御菜。经过几代人的传承，孟津横水卤肉名扬千古，享有“豫西名吃”的美名！</p>
+					<!--现在的卤肉店使用祖上传下卤猪肉秘方，以百年的卤汁加文火煨肉，并不断改进，其所卤猪肉，肉烂味美，香气四溢，百年不衰，食客趋之若骛。这卤肉，小可一人就餐，用“火烧夹卤肉”吃法；配以黄瓜、青菜、豆芽利口，最后再来一碗酸辣清汤面，甚是爽口！-->
+				</div>
+			</div>
+			
+			
+			<!----------------tab切换2--->
+			<div class="contab tab2">
+				<div class="tabl fl">
+					<ul class="l">
+						<li class="mr10"><a href="image/f2.jpg"  data-lightbox="road"><img src="image/f2.jpg"/></a></li>
+						<li><a href="image/1.jpg"  data-lightbox="road"><img src="image/1.jpg"/></a></li>
+						<li class="mr10"><a href="image/f3.jpg"  data-lightbox="road"><img src="image/f3.jpg"/></a></li>
+						<li><a href="image/f0.jpg"  data-lightbox="road"><img src="image/f0.jpg"/></a></li>
+					</ul>
+				</div>
+				<div class="rtab">
+					<span>羊肉汤</span>
+					<p>喝汤，已经成为洛阳人挥之不去的习惯。洛阳人偶尔出差一两个礼拜，心中最大的愿望，莫过于能早点赶回来喝一碗热气腾腾的汤了。 在涧西、西工，很多人大清早开车去瀍河的东花坛、孟津的铁谢，来回一个多小时，为的就是能喝上一碗正宗地道的牛肉汤、羊肉汤，日复一日，乐此不疲。</p>
+					<p>一般每天晚上小火慢炖，直到次日早上才卖,老板就将大量敲开的羊骨头置于近一人深、直径2米开外的大锅内,加入清水和自制香料,汤烧沸后,就通宵达旦地用文火熬煮。这样羊骨头里的骨髓、胶原体等就都熬到汤里了。汤里煮羊肉也极有讲究,大块羊肉而且羊肉都是现杀现煮，确保鲜度。在容量超过1000毫升的大碗里,抓上一两左右的大片羊肉,注入飞滚的沸汤,香气扑鼻。当地人喜用硬面“锅盔”泡入汤中,干硬的锅盔充分吸足了碗里的汤,咀嚼起来,当然越嚼越“美”(洛阳方言)。羊肉汤只有上午才卖，因为此时的羊肉汤可谓达到“炉火纯青”的地步。</p>
+				</div>
+			</div>
+			<!-------------------------3-->
+			<div class="contab tab3">
+				<div class="tabl fl">
+					<ul class="l">
+						<li class="mr10"><a href="image/f10.jpg"  data-lightbox="road"><img src="image/f10.jpg"/></a></li>
+						<li><a href="image/f17.jpg"  data-lightbox="road"><img src="image/f17.jpg"/></a></li>
+						<li class="mr10"><a href="image/f14.jpg"  data-lightbox="road"><img src="image/f14.jpg"/></a></li>
+						<li><a href="image/f-11.jpg"  data-lightbox="road"><img src="image/f-11.jpg"/></a></li>
+					</ul>
+				</div>
+				<div class="rtab">
+					<span>洛阳水席</span>
+					<p>洛阳水席是河南洛阳一带特有的特色传统名宴，属于豫菜系。洛阳水席始于唐代，至今已有1000多年的历史，是中国迄今保留下来的历史最久远的名宴之一。它有两个含义：一是全部热菜皆有汤－汤汤水水；二是热菜洛阳水席吃完一道，撤后再上一道，像流水一样不断地更新。 洛阳水席的特点是有荤有素、选料广泛、可简可繁、味道多样，酸、辣、甜、咸俱全，舒适可口。</p>
+					<p>洛阳水席始于唐代，至今已有1000多年的历史，是中国迄今保留下来的历史最久远的名宴之一。水席起源于洛阳，这与其地理气候有直接关系。洛阳四面环山，雨少而干燥。古时天气寒冷，不产水果，因此民间膳食多用汤类，喜欢酸辣以抵御干燥寒冷。这里的人们习惯使用当地出产 的淀粉、莲菜、山药、萝卜、白菜等制作经济实惠、汤水丰盛的 宴席，就连王公贵戚也习惯把主副食品放在一起烹制，久而久之 逐步创造出了极富地方特色的洛阳水席，并逐渐形成“酸辣味殊，清爽利口”的风味。</p>
+				</div>
+			</div>
+		</div>
+			<div class="clear"></div>
+			<div class="bots">
+				<span class="on"><a href="javascript:;">衡水卤肉</a></span><span><a href="javascript:;">羊肉汤</a></span><span><a href="javascript:;">洛阳水席</a></span>
+			</div>
+				
+			
+		</div>
+	</div>	
+	</body>
+	<script>
+		new WOW().init();
+		$(function(){
+			$(".bots span").bind("click",function(){
+//				alert($(this).index());
+				var index=$(this).index();//获取当前点击的li的索引值
+				$(this).addClass("on").siblings().removeClass("on");//给当前的li加上类active，它的同胞元素去掉类
+				$(".box>div").eq(index).show().siblings(".box>div").hide();
+			})
+			
+		})
+	</script>
+</html>

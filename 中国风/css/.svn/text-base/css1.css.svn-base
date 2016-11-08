@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*body{
+	margin: 50px auto;
+}*/
+
+.all{
+	width: 1000px;
+	margin: 50px auto;
+}
+ul li{
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+ul li a{
+	display: block;
+
+}
+.pi{
+	width: 290px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.pic1{
+	background:url(../image/7e.jpg);
+	background-size: 100% 100%;
+}
+.pic2{
+	background:url(../image/49.jpg);
+	background-size: 100% 100%;
+}
+.pic3{
+	background:url(../image/92.jpg);
+	background-size: 100% 100%;
+}
+.pic4{
+	background:url(../image/s2.jpg);
+	background-size: 100% 100%;
+}
+.pic5{
+	background:url(../image/s3.jpg);
+	background-size: 100% 100%;
+}
+.pic6{
+	background:url(../image/s5.jpg);
+	background-size: 100% 100%;
+}
+.pic7{
+	background:url(image/maiden.jpg);
+}
+.pic8{
+	background:url(image/clouds.jpg);
+}
+.pic9{
+	background:url(image/statue2.jpg);
+}
+
+.hov1:hover{
+	transform:rotate(-4deg) scale(1.1) ;
+	/*transform:translate(0px 2px) ;*/
+	transform-origin:20% 70%;
+	transition:all 0.1s linear;
+	box-shadow:0 5px 10px #777;
+}
+.hov2:hover{
+	transform:scale(1.1) translate(0px,-10px);
+	/*transform:translate(-6px 2px) ;*/
+	/*transform-origin:20% 70%;*/
+	transition:all 0.1s linear;
+	box-shadow:0 5px 10px #777;
+}
+.hov3:hover{
+	transform:rotate(3deg) scale(1.1) ;
+	/*transform:translate(-6px 2px) ;*/
+	transform-origin:80% 30%;
+	transition:all 0.1s linear;
+	box-shadow:0 5px 10px #777;
+}
+
+.harf{
+	width: 290px;
+	height: 60px;
+	padding: 3px 5px;
+	box-sizing:border-box;
+	background-color:rgba(255,255,255,0.4);
+	float: left;
+	position: relative;
+	top: 140px;
+	overflow: hidden;
+	position: relative;
+}
+.harf a{
+	width:90px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	border-radius: 20px;
+	display: block;
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	border:1px solid #eee;
+	color: #0090e2;
+	background-color:rgba(255,255,255,0.7);
+}
+
+.harf a:hover{
+	background-color: #0090e2;
+	color: #fff;
+}
+
+
+.harf h3{
+	/*width: 50px;*/
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	font-family: "微软雅黑";
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #333;
+}
